@@ -1,0 +1,6 @@
+name: "ZM16B Personal"
+packageKey: "zm16b.personal.v1"
+description: "Personal Zigbee driver for Zemismart ZM16B, including explicit one-shot limit actions."
+vendorSupportInformation: "Personal project; see README.md. Not an official Zemismart driver."
+permissions:
+  zigbee: {}

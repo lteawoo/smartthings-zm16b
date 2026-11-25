@@ -1,0 +1,40 @@
+name: zm16b-personal
+components:
+  - id: main
+    capabilities:
+      - id: windowShade
+        version: 1
+      - id: windowShadeLevel
+        version: 1
+      - id: battery
+        version: 1
+      - id: refresh
+        version: 1
+    categories:
+      - name: Blind
+preferences:
+  - name: limitAction
+    title: "Limit Action"
+    description: "Stop at the desired position, then select and save an action. To repeat it, save Idle first. This is a command, not confirmed motor status."
+    required: true
+    preferenceType: enumeration
+    definition:
+      default: idle
+      options:
+        idle: "Idle / 실행 안 함"
+        set_up: "현재 위치를 상한으로 저장"
+        set_down: "현재 위치를 하한으로 저장"
+        delete_up: "Delete upper limit / 상한 삭제"
+        delete_down: "Delete lower limit / 하한 삭제"
+        delete_both: "Delete both limits / 상하한 모두 삭제"
+  - name: motorDirectionAction
+    title: "Motor Direction"
+    description: "Only a changed selection is sent. Keep does not change the motor. This selection is not a readback of changes made with the remote."
+    required: true
+    preferenceType: enumeration
+    definition:
+      default: keep
+      options:
+        keep: "Keep current / 현재 방향 유지"
+        normal: "Set normal / 정방향 설정"
+        reversed: "Set reversed / 역방향 설정"

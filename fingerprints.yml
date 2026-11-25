@@ -1,0 +1,11 @@
+zigbeeManufacturer:
+  - id: "ZM16B/TZE284"
+    deviceLabel: "Zemismart ZM16B"
+    manufacturer: "_TZE284_3mzb0sdz"
+    model: "TS0601"
+    deviceProfileName: "zm16b-personal"
+  - id: "ZM16B/TZE2841000000"
+    deviceLabel: "Zemismart ZM16B"
+    manufacturer: "_TZE2841000000_3mzb0sdz"
+    model: "TS0601"
+    deviceProfileName: "zm16b-personal"

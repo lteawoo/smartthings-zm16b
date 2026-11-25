@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+credentials.json
+config-managed.yaml
+known_hubs.json
+*.log
+*.bak
+*.bak.*
+*.zip
+dist/
